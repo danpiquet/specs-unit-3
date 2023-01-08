@@ -1,0 +1,334 @@
+/* --------- This is CSS Reset Code --------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* --------- Begin your CSS Below here --------- */
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #da7533;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header button,
+h2,
+nav {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.header h2,
+nav {
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+.header button:hover {
+  color: #ffbf94;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 140px;
+  background-color: #3e3e3e;
+}
+
+#social-icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+#social-main-container {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+#social-main-container > h5 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#facebook-icon,
+#github-icon,
+#twitter-icon,
+#instagram-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #578a8b;
+}
+
+#dev-mountain-logo {
+  width: auto;
+  height: 70%;
+  margin-right: 50px;
+}
+
+#ad-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 300px;
+  font-family: sans-serif;
+}
+
+#ad-banner-container h1 {
+  color: #da7533;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#ad-description {
+  width: 43vw;
+  text-align: center;
+}
+
+#ad-banner-container h3 {
+  font-weight: 400;
+  color: white;
+  font-size: 25px;
+}
+
+#detail-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 500px;
+  font-family: sans-serif;
+}
+
+#detail-banner-container h1 {
+  color: #da7533;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.blue-btn {
+  background-color: #588a8b;
+  border: none;
+  color: white;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  border-radius: 1px;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  gap: 10px;
+}
+
+#all-recipes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: auto; */
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 25px;
+}
+.recipe-card-container img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.recipe-card-container h1 {
+  width: 60%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: center;
+}
+
+.search-input-field {
+  background-color: #f6ded0;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #403f3d;
+}
+
+.search-icon {
+  height: 100%;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f6ded0;
+  width: 25%;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 0.5%;
+  margin-top: 10px;
+}
+
+#home-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructions-container {
+  width: 35%;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.recipe-ingredients-container {
+  width: 20%;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.recipe-ingredients-instructions-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.recipe-ingredients-instructions-container h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.recipe-ingredients-instructions-container li,
+p,
+h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
